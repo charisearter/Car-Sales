@@ -48,7 +48,7 @@ Follow these steps for completing your project.
 
 ## Directions
 
-**Step 1 - Planning 📝**
+[x]**Step 1 - Planning 📝**
 
 - Take a good amount of time to familiarize yourself with the project structure. Figure out what data you have and where it's being used (Pen and paper or a whiteboard will be your best friend here!)
 - Plan out your state management structure as mentioned above. The only requirment is that you _must_ use Redux
