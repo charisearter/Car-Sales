@@ -1,5 +1,5 @@
 //adds feature to car and updates price (+), adds to feature array
-import { ADD_FEATURE } from '../actions/carActions'
+import { ADD_FEATURE, REMOVE_FEATURE } from '../actions/carActions'
 
 //initialize state
 
@@ -35,6 +35,15 @@ export const carReducer = (state= initialState, action) => {
         },
         additionalPrice: state.additionalPrice + action.payload.price 
       };
+    case REMOVE_FEATURE:{
+      return {
+        car: {
+        ...state.car,
+        features: state.car.features.filter(feature => feature.name !== action.payload)
+        },
+        additionalPrice: state.additionalPrice - action.payload.price
+      }
+    }
     default:
       return state;
   }
